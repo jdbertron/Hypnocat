@@ -1,0 +1,3215 @@
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/BirdFlightView
+  Superclass:    android/view/SurfaceView
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.bertron.hypnocat.BirdFlightView extends android.view.SurfaceView
+
+Interfaces (count = 1):
+  + Class [android/view/SurfaceHolder$Callback]
+
+Constant Pool (count = 230):
+  + Integer [-16777216]
+  + Integer [2130968576]
+  + Integer [2130968577]
+  + Integer [2130968578]
+  + Integer [2130968579]
+  + Integer [2130968580]
+  + Integer [2130968581]
+  + Integer [2130968582]
+  + Integer [2130968583]
+  + Integer [2130968584]
+  + Integer [2130968585]
+  + Integer [2130968586]
+  + Integer [2130968587]
+  + String [endAnimation()]
+  + String [surfaceDestroyed()]
+  + Class [android/graphics/Paint]
+  + Class [android/graphics/Paint$Style]
+  + Class [android/graphics/Point]
+  + Class [android/media/SoundPool]
+  + Class [android/util/Log]
+  + Class [android/util/SparseIntArray]
+  + Class [android/view/MotionEvent]
+  + Class [android/view/SurfaceHolder]
+  + Class [android/view/SurfaceHolder$Callback]
+  + Class [android/view/SurfaceView]
+  + Class [com/bertron/hypnocat/BirdFlightView]
+  + Class [com/bertron/hypnocat/a]
+  + Class [java/lang/Class]
+  + Class [java/lang/InterruptedException]
+  + Class [java/lang/Object]
+  + Class [java/lang/System]
+  + Class [java/util/Random]
+  + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+  + Fieldref [android/graphics/Point.x I]
+  + Fieldref [android/graphics/Point.y I]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.b I]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.f Landroid/graphics/Paint;]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.g F]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.h Ljava/util/Random;]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.i Z]
+  + Fieldref [com/bertron/hypnocat/BirdFlightView.j Z]
+  + Methodref [android/graphics/Paint.<init> ()V]
+  + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+  + Methodref [android/graphics/Paint.setColor (I)V]
+  + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+  + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+  + Methodref [android/graphics/Paint.setTextSize (F)V]
+  + Methodref [android/graphics/Point.<init> (II)V]
+  + Methodref [android/media/SoundPool.<init> (III)V]
+  + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+  + Methodref [android/media/SoundPool.play (IFFIIF)I]
+  + Methodref [android/media/SoundPool.release ()V]
+  + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/util/SparseIntArray.<init> ()V]
+  + Methodref [android/util/SparseIntArray.get (I)I]
+  + Methodref [android/util/SparseIntArray.put (II)V]
+  + Methodref [android/view/MotionEvent.getX ()F]
+  + Methodref [android/view/MotionEvent.getY ()F]
+  + Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Methodref [android/view/SurfaceView.onSizeChanged (IIII)V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.getHolder ()Landroid/view/SurfaceHolder;]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.invalidate ()V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.setFocusable (Z)V]
+  + Methodref [com/bertron/hypnocat/a.<init> (Lcom/bertron/hypnocat/BirdFlightView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V]
+  + Methodref [com/bertron/hypnocat/a.a ()V]
+  + Methodref [com/bertron/hypnocat/a.a (II)Z]
+  + Methodref [com/bertron/hypnocat/a.a (Lcom/bertron/hypnocat/a;)Z]
+  + Methodref [com/bertron/hypnocat/a.a (Z)V]
+  + Methodref [com/bertron/hypnocat/a.join ()V]
+  + Methodref [com/bertron/hypnocat/a.start ()V]
+  + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+  + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+  + Methodref [java/lang/System.currentTimeMillis ()J]
+  + Methodref [java/util/Random.<init> (J)V]
+  + Methodref [java/util/Random.nextInt (I)I]
+  + InterfaceMethodref [android/view/SurfaceHolder.addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (II)V]
+  + NameAndType [<init> (III)V]
+  + NameAndType [<init> (J)V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + NameAndType [<init> (Lcom/bertron/hypnocat/BirdFlightView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V]
+  + NameAndType [FILL Landroid/graphics/Paint$Style;]
+  + NameAndType [a ()V]
+  + NameAndType [a (II)Z]
+  + NameAndType [a (Lcom/bertron/hypnocat/a;)Z]
+  + NameAndType [a (Z)V]
+  + NameAndType [a Lcom/bertron/hypnocat/a;]
+  + NameAndType [addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+  + NameAndType [b I]
+  + NameAndType [c Landroid/media/SoundPool;]
+  + NameAndType [currentTimeMillis ()J]
+  + NameAndType [d Landroid/util/SparseIntArray;]
+  + NameAndType [e Landroid/graphics/Paint;]
+  + NameAndType [f Landroid/graphics/Paint;]
+  + NameAndType [g F]
+  + NameAndType [get (I)I]
+  + NameAndType [getClass ()Ljava/lang/Class;]
+  + NameAndType [getHolder ()Landroid/view/SurfaceHolder;]
+  + NameAndType [getName ()Ljava/lang/String;]
+  + NameAndType [getX ()F]
+  + NameAndType [getY ()F]
+  + NameAndType [h Ljava/util/Random;]
+  + NameAndType [i Z]
+  + NameAndType [invalidate ()V]
+  + NameAndType [j Z]
+  + NameAndType [join ()V]
+  + NameAndType [load (Landroid/content/Context;II)I]
+  + NameAndType [nextInt (I)I]
+  + NameAndType [onSizeChanged (IIII)V]
+  + NameAndType [play (IFFIIF)I]
+  + NameAndType [put (II)V]
+  + NameAndType [release ()V]
+  + NameAndType [setAntiAlias (Z)V]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setFocusable (Z)V]
+  + NameAndType [setStrokeWidth (F)V]
+  + NameAndType [setStyle (Landroid/graphics/Paint$Style;)V]
+  + NameAndType [setTextSize (F)V]
+  + NameAndType [start ()V]
+  + NameAndType [w (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [x I]
+  + NameAndType [y I]
+  + Utf8 [()F]
+  + Utf8 [()J]
+  + Utf8 [()Landroid/view/SurfaceHolder;]
+  + Utf8 [()Lcom/bertron/hypnocat/a;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(F)V]
+  + Utf8 [(I)I]
+  + Utf8 [(I)V]
+  + Utf8 [(IFFIIF)I]
+  + Utf8 [(II)V]
+  + Utf8 [(II)Z]
+  + Utf8 [(III)V]
+  + Utf8 [(IIII)V]
+  + Utf8 [(J)V]
+  + Utf8 [(Landroid/content/Context;II)I]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Utf8 [(Landroid/graphics/Paint$Style;)V]
+  + Utf8 [(Landroid/view/MotionEvent;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder$Callback;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder;III)V]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;)I]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;)Landroid/graphics/Paint;]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;)Z]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V]
+  + Utf8 [(Lcom/bertron/hypnocat/a;)Z]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [F]
+  + Utf8 [FILL]
+  + Utf8 [I]
+  + Utf8 [Landroid/graphics/Paint$Style;]
+  + Utf8 [Landroid/graphics/Paint;]
+  + Utf8 [Landroid/media/SoundPool;]
+  + Utf8 [Landroid/util/SparseIntArray;]
+  + Utf8 [Lcom/bertron/hypnocat/a;]
+  + Utf8 [Ljava/util/Random;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [addCallback]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/Paint$Style]
+  + Utf8 [android/graphics/Point]
+  + Utf8 [android/media/SoundPool]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/util/SparseIntArray]
+  + Utf8 [android/view/MotionEvent]
+  + Utf8 [android/view/SurfaceHolder]
+  + Utf8 [android/view/SurfaceHolder$Callback]
+  + Utf8 [android/view/SurfaceView]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/bertron/hypnocat/BirdFlightView]
+  + Utf8 [com/bertron/hypnocat/a]
+  + Utf8 [currentTimeMillis]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [endAnimation()]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [get]
+  + Utf8 [getClass]
+  + Utf8 [getHolder]
+  + Utf8 [getName]
+  + Utf8 [getX]
+  + Utf8 [getY]
+  + Utf8 [h]
+  + Utf8 [i]
+  + Utf8 [invalidate]
+  + Utf8 [j]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/InterruptedException]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/System]
+  + Utf8 [java/util/Random]
+  + Utf8 [join]
+  + Utf8 [load]
+  + Utf8 [nextInt]
+  + Utf8 [onSizeChanged]
+  + Utf8 [play]
+  + Utf8 [put]
+  + Utf8 [release]
+  + Utf8 [setAntiAlias]
+  + Utf8 [setColor]
+  + Utf8 [setFocusable]
+  + Utf8 [setStrokeWidth]
+  + Utf8 [setStyle]
+  + Utf8 [setTextSize]
+  + Utf8 [start]
+  + Utf8 [surfaceChanged]
+  + Utf8 [surfaceCreated]
+  + Utf8 [surfaceDestroyed]
+  + Utf8 [surfaceDestroyed()]
+  + Utf8 [w]
+  + Utf8 [x]
+  + Utf8 [y]
+
+Fields (count = 10):
+  + Field:        a Lcom/bertron/hypnocat/a;
+    Access flags: 0x2
+      = private com.bertron.hypnocat.a a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+  + Field:        c Landroid/media/SoundPool;
+    Access flags: 0x2
+      = private android.media.SoundPool c
+  + Field:        d Landroid/util/SparseIntArray;
+    Access flags: 0x2
+      = private android.util.SparseIntArray d
+  + Field:        e Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint e
+  + Field:        f Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint f
+  + Field:        g F
+    Access flags: 0x2
+      = private float g
+  + Field:        h Ljava/util/Random;
+    Access flags: 0x2
+      = private java.util.Random h
+  + Field:        i Z
+    Access flags: 0x2
+      = private boolean i
+  + Field:        j Z
+    Access flags: 0x2
+      = private boolean j
+
+Methods (count = 15):
+  + Method:       a(Z)V
+    Access flags: 0x11
+      = public final void a(boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #45
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.j Z]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x11
+      = public final boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #44
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.i Z]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    Access flags: 0x1
+      = public BirdFlightView(android.content.Context,android.util.AttributeSet)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 353, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #63
+        + Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+      [6] aload_0 v0
+      [7] aconst_null
+      [8] putfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [11] aload_0 v0
+      [12] fconst_1
+      [13] putfield #42
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.g F]
+      [16] aload_0 v0
+      [17] new #32
+        + Class [java/util/Random]
+      [20] dup
+      [21] invokestatic #77
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [24] invokespecial #78
+        + Methodref [java/util/Random.<init> (J)V]
+      [27] putfield #43
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.h Ljava/util/Random;]
+      [30] aload_0 v0
+      [31] iconst_0
+      [32] putfield #44
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.i Z]
+      [35] aload_0 v0
+      [36] iconst_1
+      [37] putfield #45
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.j Z]
+      [40] aload_0 v0
+      [41] new #19
+        + Class [android/media/SoundPool]
+      [44] dup
+      [45] iconst_1
+      [46] iconst_3
+      [47] iconst_0
+      [48] invokespecial #53
+        + Methodref [android/media/SoundPool.<init> (III)V]
+      [51] putfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [54] aload_0 v0
+      [55] new #21
+        + Class [android/util/SparseIntArray]
+      [58] dup
+      [59] invokespecial #58
+        + Methodref [android/util/SparseIntArray.<init> ()V]
+      [62] putfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [65] aload_0 v0
+      [66] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [69] iconst_0
+      [70] aload_0 v0
+      [71] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [74] aload_1 v1
+      [75] ldc #2
+        + Integer [2130968576]
+      [77] iconst_1
+      [78] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [81] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [84] aload_0 v0
+      [85] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [88] iconst_1
+      [89] aload_0 v0
+      [90] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [93] aload_1 v1
+      [94] ldc #3
+        + Integer [2130968577]
+      [96] iconst_1
+      [97] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [100] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [103] aload_0 v0
+      [104] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [107] iconst_2
+      [108] aload_0 v0
+      [109] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [112] aload_1 v1
+      [113] ldc #4
+        + Integer [2130968578]
+      [115] iconst_1
+      [116] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [119] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [122] aload_0 v0
+      [123] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [126] iconst_3
+      [127] aload_0 v0
+      [128] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [131] aload_1 v1
+      [132] ldc #5
+        + Integer [2130968579]
+      [134] iconst_1
+      [135] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [138] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [141] aload_0 v0
+      [142] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [145] iconst_4
+      [146] aload_0 v0
+      [147] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [150] aload_1 v1
+      [151] ldc #6
+        + Integer [2130968580]
+      [153] iconst_1
+      [154] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [157] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [160] aload_0 v0
+      [161] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [164] iconst_5
+      [165] aload_0 v0
+      [166] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [169] aload_1 v1
+      [170] ldc #7
+        + Integer [2130968581]
+      [172] iconst_1
+      [173] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [176] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [179] aload_0 v0
+      [180] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [183] bipush 6
+      [185] aload_0 v0
+      [186] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [189] aload_1 v1
+      [190] ldc #8
+        + Integer [2130968582]
+      [192] iconst_1
+      [193] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [196] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [199] aload_0 v0
+      [200] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [203] bipush 7
+      [205] aload_0 v0
+      [206] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [209] aload_1 v1
+      [210] ldc #9
+        + Integer [2130968583]
+      [212] iconst_1
+      [213] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [216] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [219] aload_0 v0
+      [220] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [223] bipush 8
+      [225] aload_0 v0
+      [226] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [229] aload_1 v1
+      [230] ldc #10
+        + Integer [2130968584]
+      [232] iconst_1
+      [233] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [236] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [239] aload_0 v0
+      [240] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [243] bipush 9
+      [245] aload_0 v0
+      [246] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [249] aload_1 v1
+      [250] ldc #11
+        + Integer [2130968585]
+      [252] iconst_1
+      [253] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [256] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [259] aload_0 v0
+      [260] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [263] bipush 10
+      [265] aload_0 v0
+      [266] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [269] aload_1 v1
+      [270] ldc #12
+        + Integer [2130968586]
+      [272] iconst_1
+      [273] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [276] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [279] aload_0 v0
+      [280] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [283] bipush 11
+      [285] aload_0 v0
+      [286] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [289] aload_1 v1
+      [290] ldc #13
+        + Integer [2130968587]
+      [292] iconst_1
+      [293] invokevirtual #54
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [296] invokevirtual #60
+        + Methodref [android/util/SparseIntArray.put (II)V]
+      [299] aload_0 v0
+      [300] new #16
+        + Class [android/graphics/Paint]
+      [303] dup
+      [304] invokespecial #46
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [307] putfield #40
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+      [310] aload_0 v0
+      [311] new #16
+        + Class [android/graphics/Paint]
+      [314] dup
+      [315] invokespecial #46
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [318] putfield #41
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.f Landroid/graphics/Paint;]
+      [321] aload_0 v0
+      [322] invokevirtual #65
+        + Methodref [com/bertron/hypnocat/BirdFlightView.getHolder ()Landroid/view/SurfaceHolder;]
+      [325] dup
+      [326] astore_2 v2
+      [327] aload_0 v0
+      [328] invokeinterface #80
+        + InterfaceMethodref [android/view/SurfaceHolder.addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+      [333] aload_0 v0
+      [334] new #27
+        + Class [com/bertron/hypnocat/a]
+      [337] dup
+      [338] aload_0 v0
+      [339] aload_2 v2
+      [340] aload_1 v1
+      [341] invokespecial #68
+        + Methodref [com/bertron/hypnocat/a.<init> (Lcom/bertron/hypnocat/BirdFlightView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V]
+      [344] putfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [347] aload_0 v0
+      [348] iconst_1
+      [349] invokevirtual #67
+        + Methodref [com/bertron/hypnocat/BirdFlightView.setFocusable (Z)V]
+      [352] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()Lcom/bertron/hypnocat/a;
+    Access flags: 0x11
+      = public final com.bertron.hypnocat.a b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onSizeChanged(IIII)V
+    Access flags: 0x4
+      = protected void onSizeChanged(int,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 75, locals = 5, stack = 5):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] iload_2 v2
+      [3] iload_3 v3
+      [4] iload v4
+      [6] invokespecial #64
+        + Methodref [android/view/SurfaceView.onSizeChanged (IIII)V]
+      [9] aload_0 v0
+      [10] iload_1 v1
+      [11] putfield #37
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.b I]
+      [14] aload_0 v0
+      [15] getfield #40
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+      [18] iconst_1
+      [19] invokevirtual #47
+        + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [22] aload_0 v0
+      [23] getfield #40
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+      [26] aload_0 v0
+      [27] getfield #42
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.g F]
+      [30] invokevirtual #49
+        + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+      [33] aload_0 v0
+      [34] getfield #40
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+      [37] sipush -256
+      [40] invokevirtual #48
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [43] aload_0 v0
+      [44] getfield #40
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+      [47] iload_1 v1
+      [48] bipush 30
+      [50] idiv
+      [51] i2f
+      [52] invokevirtual #51
+        + Methodref [android/graphics/Paint.setTextSize (F)V]
+      [55] aload_0 v0
+      [56] getfield #40
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.e Landroid/graphics/Paint;]
+      [59] getstatic #33
+        + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+      [62] invokevirtual #50
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [65] aload_0 v0
+      [66] getfield #41
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.f Landroid/graphics/Paint;]
+      [69] ldc #1
+        + Integer [-16777216]
+      [71] invokevirtual #48
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [74] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/view/MotionEvent;)V
+    Access flags: 0x11
+      = public final void a(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 68, locals = 2, stack = 7):
+      [0] new #18
+        + Class [android/graphics/Point]
+      [3] dup
+      [4] aload_1 v1
+      [5] invokevirtual #61
+        + Methodref [android/view/MotionEvent.getX ()F]
+      [8] f2i
+      [9] aload_1 v1
+      [10] invokevirtual #62
+        + Methodref [android/view/MotionEvent.getY ()F]
+      [13] f2i
+      [14] invokespecial #52
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [17] astore_1 v1
+      [18] aload_0 v0
+      [19] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [22] aload_1 v1
+      [23] getfield #34
+        + Fieldref [android/graphics/Point.x I]
+      [26] aload_1 v1
+      [27] getfield #35
+        + Fieldref [android/graphics/Point.y I]
+      [30] invokevirtual #70
+        + Methodref [com/bertron/hypnocat/a.a (II)Z]
+      [33] ifeq +34 (target=67)
+      [36] aload_0 v0
+      [37] getfield #43
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.h Ljava/util/Random;]
+      [40] bipush 12
+      [42] invokevirtual #79
+        + Methodref [java/util/Random.nextInt (I)I]
+      [45] istore_1 v1
+      [46] aload_0 v0
+      [47] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [50] aload_0 v0
+      [51] getfield #39
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.d Landroid/util/SparseIntArray;]
+      [54] iload_1 v1
+      [55] invokevirtual #59
+        + Methodref [android/util/SparseIntArray.get (I)I]
+      [58] fconst_1
+      [59] fconst_1
+      [60] iconst_1
+      [61] iconst_0
+      [62] fconst_1
+      [63] invokevirtual #55
+        + Methodref [android/media/SoundPool.play (IFFIIF)I]
+      [66] pop
+      [67] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [67] Var: ...[a:android/graphics/Point], Stack: (empty)
+  + Method:       c()V
+    Access flags: 0x11
+      = public final void c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 58, locals = 4, stack = 2):
+      [0] iconst_1
+      [1] istore_1 v1
+      [2] aload_0 v0
+      [3] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [6] iconst_0
+      [7] invokevirtual #72
+        + Methodref [com/bertron/hypnocat/a.a (Z)V]
+      [10] aload_0 v0
+      [11] iconst_0
+      [12] istore_3 v3
+      [13] dup
+      [14] astore_2 v2
+      [15] iload_3 v3
+      [16] putfield #45
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.j Z]
+      [19] goto +16 (target=35)
+      [22] aload_0 v0
+      [23] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [26] invokevirtual #73
+        + Methodref [com/bertron/hypnocat/a.join ()V]
+      [29] iconst_0
+      [30] istore_1 v1
+      [31] goto +4 (target=35)
+      [34] pop
+      [35] iload_1 v1
+      [36] ifne -14 (target=22)
+      [39] aload_0 v0
+      [40] invokevirtual #76
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [43] invokevirtual #75
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [46] ldc #14
+        + String [endAnimation()]
+      [48] invokestatic #57
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [51] pop
+      [52] aload_0 v0
+      [53] aconst_null
+      [54] putfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [57] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (22 -> 31: 34):
+      + Class [java/lang/InterruptedException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [22] Var: ...[i], Stack: (empty)
+        - [34] Var: ..., Stack: [a:java/lang/InterruptedException]
+        - [35] Var: ..., Stack: (empty)
+  + Method:       d()V
+    Access flags: 0x11
+      = public final void d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [4] invokevirtual #56
+        + Methodref [android/media/SoundPool.release ()V]
+      [7] aload_0 v0
+      [8] aconst_null
+      [9] putfield #38
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.c Landroid/media/SoundPool;]
+      [12] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceChanged(Landroid/view/SurfaceHolder;III)V
+    Access flags: 0x1
+      = public void surfaceChanged(android.view.SurfaceHolder,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 8, locals = 5, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [4] invokevirtual #69
+        + Methodref [com/bertron/hypnocat/a.a ()V]
+      [7] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceCreated(Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public void surfaceCreated(android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 31, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iconst_1
+      [2] putfield #44
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.i Z]
+      [5] aload_0 v0
+      [6] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [9] invokestatic #71
+        + Methodref [com/bertron/hypnocat/a.a (Lcom/bertron/hypnocat/a;)Z]
+      [12] ifne +18 (target=30)
+      [15] aload_0 v0
+      [16] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [19] iconst_1
+      [20] invokevirtual #72
+        + Methodref [com/bertron/hypnocat/a.a (Z)V]
+      [23] aload_0 v0
+      [24] getfield #36
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.a Lcom/bertron/hypnocat/a;]
+      [27] invokevirtual #74
+        + Methodref [com/bertron/hypnocat/a.start ()V]
+      [30] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [30] Var: ..., Stack: (empty)
+  + Method:       surfaceDestroyed(Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public void surfaceDestroyed(android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iconst_0
+      [2] putfield #44
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.i Z]
+      [5] aload_0 v0
+      [6] invokevirtual #76
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [9] invokevirtual #75
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [12] ldc #15
+        + String [surfaceDestroyed()]
+      [14] invokestatic #57
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [17] pop
+      [18] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       e()V
+    Access flags: 0x11
+      = public final void e()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokevirtual #66
+        + Methodref [com/bertron/hypnocat/BirdFlightView.invalidate ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/bertron/hypnocat/BirdFlightView;)Z
+    Access flags: 0x1008
+      = static synthetic boolean a(com.bertron.hypnocat.BirdFlightView)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #45
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.j Z]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/bertron/hypnocat/BirdFlightView;)Landroid/graphics/Paint;
+    Access flags: 0x1008
+      = static synthetic android.graphics.Paint b(com.bertron.hypnocat.BirdFlightView)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #41
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.f Landroid/graphics/Paint;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Lcom/bertron/hypnocat/BirdFlightView;)I
+    Access flags: 0x1008
+      = static synthetic int c(com.bertron.hypnocat.BirdFlightView)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #37
+        + Fieldref [com/bertron/hypnocat/BirdFlightView.b I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/a
+  Superclass:    java/lang/Thread
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.bertron.hypnocat.a extends java.lang.Thread
+
+Interfaces (count = 0):
+
+Constant Pool (count = 239):
+  + Integer [2130837505]
+  + Integer [2130837506]
+  + String [AnimationThread]
+  + Class [android/content/Context]
+  + Class [android/graphics/Bitmap]
+  + Class [android/graphics/BitmapFactory]
+  + Class [android/graphics/Canvas]
+  + Class [android/graphics/Rect]
+  + Class [android/view/SurfaceHolder]
+  + Class [com/bertron/hypnocat/BirdFlightView]
+  + Class [com/bertron/hypnocat/a]
+  + Class [com/bertron/hypnocat/b]
+  + Class [java/lang/InterruptedException]
+  + Class [java/lang/Math]
+  + Class [java/lang/System]
+  + Class [java/lang/Thread]
+  + Class [java/lang/Throwable]
+  + Class [java/util/Iterator]
+  + Class [java/util/ListIterator]
+  + Class [java/util/Random]
+  + Class [java/util/Vector]
+  + Long [-1]
+  + Long [16]
+  + Long [100]
+  + Long [500]
+  + Double [-1.0]
+  + Double [0.0010]
+  + Double [80.0]
+  + Double [500.0]
+  + Double [1000.0]
+  + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+  + Fieldref [com/bertron/hypnocat/a.b Z]
+  + Fieldref [com/bertron/hypnocat/a.c J]
+  + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+  + Fieldref [com/bertron/hypnocat/a.e Landroid/graphics/Bitmap;]
+  + Fieldref [com/bertron/hypnocat/a.f Landroid/graphics/Bitmap;]
+  + Fieldref [com/bertron/hypnocat/a.g J]
+  + Fieldref [com/bertron/hypnocat/a.h Ljava/util/Random;]
+  + Fieldref [com/bertron/hypnocat/a.i D]
+  + Fieldref [com/bertron/hypnocat/a.j J]
+  + Fieldref [com/bertron/hypnocat/a.k Lcom/bertron/hypnocat/BirdFlightView;]
+  + Fieldref [com/bertron/hypnocat/b.a D]
+  + Fieldref [com/bertron/hypnocat/b.b D]
+  + Fieldref [com/bertron/hypnocat/b.c D]
+  + Fieldref [com/bertron/hypnocat/b.d D]
+  + Fieldref [com/bertron/hypnocat/b.e I]
+  + Fieldref [com/bertron/hypnocat/b.f I]
+  + Fieldref [com/bertron/hypnocat/b.g Landroid/graphics/Bitmap;]
+  + Fieldref [com/bertron/hypnocat/b.h I]
+  + Fieldref [com/bertron/hypnocat/b.i J]
+  + Fieldref [com/bertron/hypnocat/b.j J]
+  + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+  + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+  + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawRect (FFFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.getHeight ()I]
+  + Methodref [android/graphics/Canvas.getWidth ()I]
+  + Methodref [android/graphics/Rect.<init> (IIII)V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.a ()Z]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.a (Lcom/bertron/hypnocat/BirdFlightView;)Z]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.b (Lcom/bertron/hypnocat/BirdFlightView;)Landroid/graphics/Paint;]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.c (Lcom/bertron/hypnocat/BirdFlightView;)I]
+  + Methodref [com/bertron/hypnocat/a.a (Ljava/util/Random;)Lcom/bertron/hypnocat/b;]
+  + Methodref [com/bertron/hypnocat/a.setName (Ljava/lang/String;)V]
+  + Methodref [com/bertron/hypnocat/b.<init> (Lcom/bertron/hypnocat/a;Landroid/graphics/Bitmap;IIDDI)V]
+  + Methodref [java/lang/InterruptedException.printStackTrace ()V]
+  + Methodref [java/lang/Math.log (D)D]
+  + Methodref [java/lang/System.currentTimeMillis ()J]
+  + Methodref [java/lang/Thread.<init> ()V]
+  + Methodref [java/lang/Thread.sleep (J)V]
+  + Methodref [java/util/Random.<init> (J)V]
+  + Methodref [java/util/Random.nextDouble ()D]
+  + Methodref [java/util/Random.nextInt ()I]
+  + Methodref [java/util/Random.nextInt (I)I]
+  + Methodref [java/util/Vector.<init> ()V]
+  + Methodref [java/util/Vector.add (Ljava/lang/Object;)Z]
+  + Methodref [java/util/Vector.iterator ()Ljava/util/Iterator;]
+  + Methodref [java/util/Vector.listIterator ()Ljava/util/ListIterator;]
+  + InterfaceMethodref [android/view/SurfaceHolder.lockCanvas (Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+  + InterfaceMethodref [android/view/SurfaceHolder.unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/ListIterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/ListIterator.next ()Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/ListIterator.remove ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (IIII)V]
+  + NameAndType [<init> (J)V]
+  + NameAndType [<init> (Lcom/bertron/hypnocat/a;Landroid/graphics/Bitmap;IIDDI)V]
+  + NameAndType [a ()Z]
+  + NameAndType [a (Lcom/bertron/hypnocat/BirdFlightView;)Z]
+  + NameAndType [a (Ljava/util/Random;)Lcom/bertron/hypnocat/b;]
+  + NameAndType [a D]
+  + NameAndType [a Landroid/view/SurfaceHolder;]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [b (Lcom/bertron/hypnocat/BirdFlightView;)Landroid/graphics/Paint;]
+  + NameAndType [b D]
+  + NameAndType [b Z]
+  + NameAndType [c (Lcom/bertron/hypnocat/BirdFlightView;)I]
+  + NameAndType [c D]
+  + NameAndType [c J]
+  + NameAndType [currentTimeMillis ()J]
+  + NameAndType [d D]
+  + NameAndType [d Ljava/util/Vector;]
+  + NameAndType [decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+  + NameAndType [drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + NameAndType [drawRect (FFFFLandroid/graphics/Paint;)V]
+  + NameAndType [e I]
+  + NameAndType [e Landroid/graphics/Bitmap;]
+  + NameAndType [f I]
+  + NameAndType [f Landroid/graphics/Bitmap;]
+  + NameAndType [g J]
+  + NameAndType [g Landroid/graphics/Bitmap;]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [h I]
+  + NameAndType [h Ljava/util/Random;]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [i D]
+  + NameAndType [i J]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [j J]
+  + NameAndType [k Lcom/bertron/hypnocat/BirdFlightView;]
+  + NameAndType [listIterator ()Ljava/util/ListIterator;]
+  + NameAndType [lockCanvas (Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+  + NameAndType [log (D)D]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [nextDouble ()D]
+  + NameAndType [nextInt ()I]
+  + NameAndType [nextInt (I)I]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [remove ()V]
+  + NameAndType [setName (Ljava/lang/String;)V]
+  + NameAndType [sleep (J)V]
+  + NameAndType [unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+  + Utf8 [()D]
+  + Utf8 [()I]
+  + Utf8 [()J]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/ListIterator;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(D)D]
+  + Utf8 [(FFFFLandroid/graphics/Paint;)V]
+  + Utf8 [(I)I]
+  + Utf8 [(II)Z]
+  + Utf8 [(IIII)V]
+  + Utf8 [(J)V]
+  + Utf8 [(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/graphics/Canvas;)V]
+  + Utf8 [(Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;)I]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;)Landroid/graphics/Paint;]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;)Z]
+  + Utf8 [(Lcom/bertron/hypnocat/BirdFlightView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V]
+  + Utf8 [(Lcom/bertron/hypnocat/a;)Z]
+  + Utf8 [(Lcom/bertron/hypnocat/a;Landroid/graphics/Bitmap;IIDDI)V]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/util/Random;)Lcom/bertron/hypnocat/b;]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [AnimationThread]
+  + Utf8 [Code]
+  + Utf8 [D]
+  + Utf8 [I]
+  + Utf8 [J]
+  + Utf8 [Landroid/graphics/Bitmap;]
+  + Utf8 [Landroid/view/SurfaceHolder;]
+  + Utf8 [Lcom/bertron/hypnocat/BirdFlightView;]
+  + Utf8 [Ljava/util/Random;]
+  + Utf8 [Ljava/util/Vector;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [android/graphics/BitmapFactory]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Rect]
+  + Utf8 [android/view/SurfaceHolder]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/bertron/hypnocat/BirdFlightView]
+  + Utf8 [com/bertron/hypnocat/a]
+  + Utf8 [com/bertron/hypnocat/b]
+  + Utf8 [currentTimeMillis]
+  + Utf8 [d]
+  + Utf8 [decodeResource]
+  + Utf8 [drawBitmap]
+  + Utf8 [drawRect]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getHeight]
+  + Utf8 [getResources]
+  + Utf8 [getWidth]
+  + Utf8 [h]
+  + Utf8 [hasNext]
+  + Utf8 [i]
+  + Utf8 [iterator]
+  + Utf8 [j]
+  + Utf8 [java/lang/InterruptedException]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/System]
+  + Utf8 [java/lang/Thread]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/ListIterator]
+  + Utf8 [java/util/Random]
+  + Utf8 [java/util/Vector]
+  + Utf8 [k]
+  + Utf8 [listIterator]
+  + Utf8 [lockCanvas]
+  + Utf8 [log]
+  + Utf8 [next]
+  + Utf8 [nextDouble]
+  + Utf8 [nextInt]
+  + Utf8 [printStackTrace]
+  + Utf8 [remove]
+  + Utf8 [run]
+  + Utf8 [setName]
+  + Utf8 [sleep]
+  + Utf8 [unlockCanvasAndPost]
+
+Fields (count = 11):
+  + Field:        a Landroid/view/SurfaceHolder;
+    Access flags: 0x2
+      = private android.view.SurfaceHolder a
+  + Field:        b Z
+    Access flags: 0x2
+      = private boolean b
+  + Field:        c J
+    Access flags: 0x2
+      = private long c
+  + Field:        d Ljava/util/Vector;
+    Access flags: 0x2
+      = private java.util.Vector d
+  + Field:        e Landroid/graphics/Bitmap;
+    Access flags: 0x2
+      = private android.graphics.Bitmap e
+  + Field:        f Landroid/graphics/Bitmap;
+    Access flags: 0x2
+      = private android.graphics.Bitmap f
+  + Field:        g J
+    Access flags: 0x2
+      = private long g
+  + Field:        h Ljava/util/Random;
+    Access flags: 0x2
+      = private java.util.Random h
+  + Field:        i D
+    Access flags: 0x2
+      = private double i
+  + Field:        j J
+    Access flags: 0x2
+      = private long j
+  + Field:        k Lcom/bertron/hypnocat/BirdFlightView;
+    Access flags: 0x1002
+      = private synthetic com.bertron.hypnocat.BirdFlightView k
+
+Methods (count = 7):
+  - Method:       <init>(Lcom/bertron/hypnocat/BirdFlightView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V
+    Access flags: 0x1
+      = public a(com.bertron.hypnocat.BirdFlightView,android.view.SurfaceHolder,android.content.Context)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 99, locals = 4, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #50
+        + Fieldref [com/bertron/hypnocat/a.k Lcom/bertron/hypnocat/BirdFlightView;]
+      [5] aload_0 v0
+      [6] invokespecial #78
+        + Methodref [java/lang/Thread.<init> ()V]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] putfield #41
+        + Fieldref [com/bertron/hypnocat/a.b Z]
+      [14] aload_0 v0
+      [15] invokestatic #77
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [18] ldc2_w #26
+        + Long [100]
+      [21] ladd
+      [22] putfield #42
+        + Fieldref [com/bertron/hypnocat/a.c J]
+      [25] aload_0 v0
+      [26] new #21
+        + Class [java/util/Vector]
+      [29] dup
+      [30] invokespecial #84
+        + Methodref [java/util/Vector.<init> ()V]
+      [33] putfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [36] aload_0 v0
+      [37] lconst_0
+      [38] putfield #46
+        + Fieldref [com/bertron/hypnocat/a.g J]
+      [41] aload_0 v0
+      [42] new #20
+        + Class [java/util/Random]
+      [45] dup
+      [46] invokestatic #77
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [49] invokespecial #80
+        + Methodref [java/util/Random.<init> (J)V]
+      [52] putfield #47
+        + Fieldref [com/bertron/hypnocat/a.h Ljava/util/Random;]
+      [55] aload_0 v0
+      [56] ldc2_w #32
+        + Double [0.0010]
+      [59] putfield #48
+        + Fieldref [com/bertron/hypnocat/a.i D]
+      [62] aload_0 v0
+      [63] aload_2 v2
+      [64] putfield #40
+        + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+      [67] aload_0 v0
+      [68] ldc #3
+        + String [AnimationThread]
+      [70] invokevirtual #73
+        + Methodref [com/bertron/hypnocat/a.setName (Ljava/lang/String;)V]
+      [73] aload_3 v3
+      [74] invokevirtual #61
+        + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+      [77] astore_1 v1
+      [78] aload_0 v0
+      [79] aload_1 v1
+      [80] ldc #1
+        + Integer [2130837505]
+      [82] invokestatic #62
+        + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+      [85] putfield #44
+        + Fieldref [com/bertron/hypnocat/a.e Landroid/graphics/Bitmap;]
+      [88] aload_0 v0
+      [89] aload_1 v1
+      [90] ldc #2
+        + Integer [2130837506]
+      [92] invokestatic #62
+        + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+      [95] putfield #45
+        + Fieldref [com/bertron/hypnocat/a.f Landroid/graphics/Bitmap;]
+      [98] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x11
+      = public final void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 44, locals = 4, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #40
+        + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+      [4] dup
+      [5] astore_1 v1
+      [6] monitorenter
+      [7] iconst_0
+      [8] istore_2 v2
+      [9] goto +24 (target=33)
+      [12] aload_0 v0
+      [13] aload_0 v0
+      [14] getfield #47
+        + Fieldref [com/bertron/hypnocat/a.h Ljava/util/Random;]
+      [17] invokespecial #72
+        + Methodref [com/bertron/hypnocat/a.a (Ljava/util/Random;)Lcom/bertron/hypnocat/b;]
+      [20] astore_3 v3
+      [21] aload_0 v0
+      [22] getfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [25] aload_3 v3
+      [26] invokevirtual #85
+        + Methodref [java/util/Vector.add (Ljava/lang/Object;)Z]
+      [29] pop
+      [30] iinc v2, 1
+      [33] iload_2 v2
+      [34] iconst_5
+      [35] ificmplt -23 (target=12)
+      [38] aload_1 v1
+      [39] monitorexit
+      [40] return
+      [41] aload_1 v1
+      [42] monitorexit
+      [43] athrow
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (7 -> 40: 41):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [12] Var: ...[a:android/view/SurfaceHolder][i], Stack: (empty)
+        - [33] Var: ..., Stack: (empty)
+        - [41] Var: [a:com/bertron/hypnocat/a][i][i][a:android/view/SurfaceHolder], Stack: [a:java/lang/Throwable]
+        - [44] Var: -1, Stack: (empty)
+  + Method:       a(Ljava/util/Random;)Lcom/bertron/hypnocat/b;
+    Access flags: 0x2
+      = private com.bertron.hypnocat.b a(java.util.Random)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 118, locals = 10, stack = 11):
+      [0] aload_1 v1
+      [1] sipush 200
+      [4] invokevirtual #83
+        + Methodref [java/util/Random.nextInt (I)I]
+      [7] sipush 200
+      [10] isub
+      [11] istore_2 v2
+      [12] aload_1 v1
+      [13] bipush 50
+      [15] invokevirtual #83
+        + Methodref [java/util/Random.nextInt (I)I]
+      [18] bipush 80
+      [20] iadd
+      [21] istore_3 v3
+      [22] aload_1 v1
+      [23] bipush 100
+      [25] invokevirtual #83
+        + Methodref [java/util/Random.nextInt (I)I]
+      [28] iconst_1
+      [29] iadd
+      [30] istore v4
+      [32] bipush 100
+      [34] iload v4
+      [36] idiv
+      [37] bipush 15
+      [39] iadd
+      [40] istore v5
+      [42] iconst_2
+      [43] iload v4
+      [45] imul
+      [46] i2d
+      [47] ldc2_w #36
+        + Double [500.0]
+      [50] dadd
+      [51] ldc2_w #38
+        + Double [1000.0]
+      [54] ddiv
+      [55] dstore v6
+      [57] ldc2_w #30
+        + Double [-1.0]
+      [60] aload_1 v1
+      [61] bipush 20
+      [63] invokevirtual #83
+        + Methodref [java/util/Random.nextInt (I)I]
+      [66] i2d
+      [67] ldc2_w #34
+        + Double [80.0]
+      [70] dadd
+      [71] dmul
+      [72] ldc2_w #38
+        + Double [1000.0]
+      [75] ddiv
+      [76] dstore v8
+      [78] aload_1 v1
+      [79] invokevirtual #82
+        + Methodref [java/util/Random.nextInt ()I]
+      [82] iconst_2
+      [83] irem
+      [84] ifne +11 (target=95)
+      [87] aload_0 v0
+      [88] getfield #44
+        + Fieldref [com/bertron/hypnocat/a.e Landroid/graphics/Bitmap;]
+      [91] astore_1 v1
+      [92] goto +8 (target=100)
+      [95] aload_0 v0
+      [96] getfield #45
+        + Fieldref [com/bertron/hypnocat/a.f Landroid/graphics/Bitmap;]
+      [99] astore_1 v1
+      [100] new #12
+        + Class [com/bertron/hypnocat/b]
+      [103] dup
+      [104] aload_0 v0
+      [105] aload_1 v1
+      [106] iload_2 v2
+      [107] iload_3 v3
+      [108] dload v6
+      [110] dload v8
+      [112] iload v5
+      [114] invokespecial #74
+        + Methodref [com/bertron/hypnocat/b.<init> (Lcom/bertron/hypnocat/a;Landroid/graphics/Bitmap;IIDDI)V]
+      [117] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [95] Var: [a:com/bertron/hypnocat/a][a:java/util/Random][i][i][i][i][d][d], Stack: 
+        - [100] Var: ...[a:android/graphics/Bitmap], Stack: (empty)
+  + Method:       a(Z)V
+    Access flags: 0x11
+      = public final void a(boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #41
+        + Fieldref [com/bertron/hypnocat/a.b Z]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x11
+      = public final void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 612, locals = 21, stack = 7):
+      [0] goto +17 (target=17)
+      [3] ldc2_w #26
+        + Long [100]
+      [6] invokestatic #79
+        + Methodref [java/lang/Thread.sleep (J)V]
+      [9] goto +8 (target=17)
+      [12] dup
+      [13] astore_1 v1
+      [14] invokevirtual #75
+        + Methodref [java/lang/InterruptedException.printStackTrace ()V]
+      [17] aload_0 v0
+      [18] getfield #50
+        + Fieldref [com/bertron/hypnocat/a.k Lcom/bertron/hypnocat/BirdFlightView;]
+      [21] invokevirtual #68
+        + Methodref [com/bertron/hypnocat/BirdFlightView.a ()Z]
+      [24] ifne +10 (target=34)
+      [27] aload_0 v0
+      [28] getfield #41
+        + Fieldref [com/bertron/hypnocat/a.b Z]
+      [31] ifne -28 (target=3)
+      [34] aload_0 v0
+      [35] invokestatic #77
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [38] putfield #42
+        + Fieldref [com/bertron/hypnocat/a.c J]
+      [41] goto +563 (target=604)
+      [44] ldc2_w #28
+        + Long [500]
+      [47] invokestatic #79
+        + Methodref [java/lang/Thread.sleep (J)V]
+      [50] goto +8 (target=58)
+      [53] dup
+      [54] astore_1 v1
+      [55] invokevirtual #75
+        + Methodref [java/lang/InterruptedException.printStackTrace ()V]
+      [58] aload_0 v0
+      [59] invokestatic #77
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [62] putfield #42
+        + Fieldref [com/bertron/hypnocat/a.c J]
+      [65] aload_0 v0
+      [66] getfield #50
+        + Fieldref [com/bertron/hypnocat/a.k Lcom/bertron/hypnocat/BirdFlightView;]
+      [69] invokestatic #69
+        + Methodref [com/bertron/hypnocat/BirdFlightView.a (Lcom/bertron/hypnocat/BirdFlightView;)Z]
+      [72] ifne -28 (target=44)
+      [75] aload_0 v0
+      [76] invokestatic #77
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [79] putfield #49
+        + Fieldref [com/bertron/hypnocat/a.j J]
+      [82] aconst_null
+      [83] astore_1 v1
+      [84] aload_0 v0
+      [85] getfield #41
+        + Fieldref [com/bertron/hypnocat/a.b Z]
+      [88] ifeq +502 (target=590)
+      [91] aload_0 v0
+      [92] getfield #40
+        + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+      [95] aconst_null
+      [96] invokeinterface #88
+        + InterfaceMethodref [android/view/SurfaceHolder.lockCanvas (Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+      [101] astore_1 v1
+      [102] aload_0 v0
+      [103] getfield #40
+        + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+      [106] dup
+      [107] astore_2 v2
+      [108] monitorenter
+      [109] aload_0 v0
+      [110] dup
+      [111] astore_3 v3
+      [112] getfield #42
+        + Fieldref [com/bertron/hypnocat/a.c J]
+      [115] aload_3 v3
+      [116] getfield #49
+        + Fieldref [com/bertron/hypnocat/a.j J]
+      [119] lcmp
+      [120] ifgt +276 (target=396)
+      [123] aload_3 v3
+      [124] getfield #49
+        + Fieldref [com/bertron/hypnocat/a.j J]
+      [127] aload_3 v3
+      [128] getfield #42
+        + Fieldref [com/bertron/hypnocat/a.c J]
+      [131] lsub
+      [132] lstore v5
+      [134] aload_3 v3
+      [135] getfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [138] invokevirtual #86
+        + Methodref [java/util/Vector.iterator ()Ljava/util/Iterator;]
+      [141] astore v7
+      [143] goto +102 (target=245)
+      [146] aload v7
+      [148] invokeinterface #91
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [153] checkcast #12
+        + Class [com/bertron/hypnocat/b]
+      [156] astore v4
+      [158] lload v5
+      [160] l2d
+      [161] aload v4
+      [163] getfield #51
+        + Fieldref [com/bertron/hypnocat/b.a D]
+      [166] dmul
+      [167] dstore v9
+      [169] lload v5
+      [171] l2d
+      [172] aload v4
+      [174] getfield #52
+        + Fieldref [com/bertron/hypnocat/b.b D]
+      [177] dmul
+      [178] dstore v11
+      [180] aload v4
+      [182] dup
+      [183] getfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [186] dload v9
+      [188] dadd
+      [189] putfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [192] aload v4
+      [194] dup
+      [195] getfield #54
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [198] dload v11
+      [200] dadd
+      [201] putfield #54
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [204] aload v4
+      [206] aload_3 v3
+      [207] getfield #49
+        + Fieldref [com/bertron/hypnocat/a.j J]
+      [210] lstore v14
+      [212] astore v4
+      [214] lload v14
+      [216] aload v4
+      [218] getfield #60
+        + Fieldref [com/bertron/hypnocat/b.j J]
+      [221] lsub
+      [222] dup2
+      [223] lstore v16
+      [225] aload v4
+      [227] getfield #59
+        + Fieldref [com/bertron/hypnocat/b.i J]
+      [230] ldiv
+      [231] lstore v18
+      [233] aload v4
+      [235] lload v18
+      [237] ldc2_w #24
+        + Long [16]
+      [240] lrem
+      [241] l2i
+      [242] putfield #58
+        + Fieldref [com/bertron/hypnocat/b.h I]
+      [245] aload v7
+      [247] invokeinterface #90
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [252] ifne -106 (target=146)
+      [255] aload_3 v3
+      [256] getfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [259] invokevirtual #87
+        + Methodref [java/util/Vector.listIterator ()Ljava/util/ListIterator;]
+      [262] astore v4
+      [264] goto +38 (target=302)
+      [267] aload v4
+      [269] invokeinterface #93
+        + InterfaceMethodref [java/util/ListIterator.next ()Ljava/lang/Object;]
+      [274] checkcast #12
+        + Class [com/bertron/hypnocat/b]
+      [277] dup
+      [278] astore v7
+      [280] getfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [283] aload_3 v3
+      [284] getfield #50
+        + Fieldref [com/bertron/hypnocat/a.k Lcom/bertron/hypnocat/BirdFlightView;]
+      [287] invokestatic #71
+        + Methodref [com/bertron/hypnocat/BirdFlightView.c (Lcom/bertron/hypnocat/BirdFlightView;)I]
+      [290] i2d
+      [291] dcmpl
+      [292] ifle +10 (target=302)
+      [295] aload v4
+      [297] invokeinterface #94
+        + InterfaceMethodref [java/util/ListIterator.remove ()V]
+      [302] aload v4
+      [304] invokeinterface #92
+        + InterfaceMethodref [java/util/ListIterator.hasNext ()Z]
+      [309] ifne -42 (target=267)
+      [312] aload_3 v3
+      [313] dup
+      [314] getfield #46
+        + Fieldref [com/bertron/hypnocat/a.g J]
+      [317] lload v5
+      [319] lsub
+      [320] putfield #46
+        + Fieldref [com/bertron/hypnocat/a.g J]
+      [323] aload_3 v3
+      [324] getfield #46
+        + Fieldref [com/bertron/hypnocat/a.g J]
+      [327] ldc2_w #22
+        + Long [-1]
+      [330] lcmp
+      [331] ifge +57 (target=388)
+      [334] aload_3 v3
+      [335] getfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [338] aload_3 v3
+      [339] aload_3 v3
+      [340] getfield #47
+        + Fieldref [com/bertron/hypnocat/a.h Ljava/util/Random;]
+      [343] invokespecial #72
+        + Methodref [com/bertron/hypnocat/a.a (Ljava/util/Random;)Lcom/bertron/hypnocat/b;]
+      [346] invokevirtual #85
+        + Methodref [java/util/Vector.add (Ljava/lang/Object;)Z]
+      [349] pop
+      [350] aload_3 v3
+      [351] aload_3 v3
+      [352] getfield #47
+        + Fieldref [com/bertron/hypnocat/a.h Ljava/util/Random;]
+      [355] aload_3 v3
+      [356] getfield #48
+        + Fieldref [com/bertron/hypnocat/a.i D]
+      [359] dstore v14
+      [361] dup
+      [362] astore v4
+      [364] invokevirtual #81
+        + Methodref [java/util/Random.nextDouble ()D]
+      [367] dstore v17
+      [369] ldc2_w #30
+        + Double [-1.0]
+      [372] dload v17
+      [374] invokestatic #76
+        + Methodref [java/lang/Math.log (D)D]
+      [377] dmul
+      [378] dload v14
+      [380] ddiv
+      [381] dup2
+      [382] dstore v19
+      [384] d2l
+      [385] putfield #46
+        + Fieldref [com/bertron/hypnocat/a.g J]
+      [388] aload_3 v3
+      [389] aload_3 v3
+      [390] getfield #49
+        + Fieldref [com/bertron/hypnocat/a.j J]
+      [393] putfield #42
+        + Fieldref [com/bertron/hypnocat/a.c J]
+      [396] aload_0 v0
+      [397] aload_1 v1
+      [398] astore v5
+      [400] astore_3 v3
+      [401] aload v5
+      [403] fconst_0
+      [404] fconst_0
+      [405] aload v5
+      [407] invokevirtual #66
+        + Methodref [android/graphics/Canvas.getWidth ()I]
+      [410] i2f
+      [411] aload v5
+      [413] invokevirtual #65
+        + Methodref [android/graphics/Canvas.getHeight ()I]
+      [416] i2f
+      [417] aload_3 v3
+      [418] getfield #50
+        + Fieldref [com/bertron/hypnocat/a.k Lcom/bertron/hypnocat/BirdFlightView;]
+      [421] invokestatic #70
+        + Methodref [com/bertron/hypnocat/BirdFlightView.b (Lcom/bertron/hypnocat/BirdFlightView;)Landroid/graphics/Paint;]
+      [424] invokevirtual #64
+        + Methodref [android/graphics/Canvas.drawRect (FFFFLandroid/graphics/Paint;)V]
+      [427] aload_3 v3
+      [428] getfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [431] invokevirtual #86
+        + Methodref [java/util/Vector.iterator ()Ljava/util/Iterator;]
+      [434] astore v4
+      [436] goto +119 (target=555)
+      [439] aload v4
+      [441] invokeinterface #91
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [446] checkcast #12
+        + Class [com/bertron/hypnocat/b]
+      [449] dup
+      [450] astore v6
+      [452] aload v5
+      [454] astore v9
+      [456] dup
+      [457] astore v7
+      [459] getfield #56
+        + Fieldref [com/bertron/hypnocat/b.f I]
+      [462] aload v7
+      [464] getfield #58
+        + Fieldref [com/bertron/hypnocat/b.h I]
+      [467] imul
+      [468] istore v10
+      [470] new #8
+        + Class [android/graphics/Rect]
+      [473] dup
+      [474] iload v10
+      [476] iconst_0
+      [477] iload v10
+      [479] aload v7
+      [481] getfield #56
+        + Fieldref [com/bertron/hypnocat/b.f I]
+      [484] iadd
+      [485] aload v7
+      [487] getfield #55
+        + Fieldref [com/bertron/hypnocat/b.e I]
+      [490] invokespecial #67
+        + Methodref [android/graphics/Rect.<init> (IIII)V]
+      [493] astore v11
+      [495] new #8
+        + Class [android/graphics/Rect]
+      [498] dup
+      [499] aload v7
+      [501] getfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [504] d2i
+      [505] aload v7
+      [507] getfield #54
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [510] d2i
+      [511] aload v7
+      [513] getfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [516] d2i
+      [517] aload v7
+      [519] getfield #56
+        + Fieldref [com/bertron/hypnocat/b.f I]
+      [522] iadd
+      [523] aload v7
+      [525] getfield #54
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [528] d2i
+      [529] aload v7
+      [531] getfield #55
+        + Fieldref [com/bertron/hypnocat/b.e I]
+      [534] iadd
+      [535] invokespecial #67
+        + Methodref [android/graphics/Rect.<init> (IIII)V]
+      [538] astore v12
+      [540] aload v9
+      [542] aload v7
+      [544] getfield #57
+        + Fieldref [com/bertron/hypnocat/b.g Landroid/graphics/Bitmap;]
+      [547] aload v11
+      [549] aload v12
+      [551] aconst_null
+      [552] invokevirtual #63
+        + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [555] aload v4
+      [557] invokeinterface #90
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [562] ifne -123 (target=439)
+      [565] aload_2 v2
+      [566] monitorexit
+      [567] goto +23 (target=590)
+      [570] aload_2 v2
+      [571] monitorexit
+      [572] athrow
+      [573] astore_2 v2
+      [574] aload_1 v1
+      [575] ifnull +13 (target=588)
+      [578] aload_0 v0
+      [579] getfield #40
+        + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+      [582] aload_1 v1
+      [583] invokeinterface #89
+        + InterfaceMethodref [android/view/SurfaceHolder.unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+      [588] aload_2 v2
+      [589] athrow
+      [590] aload_1 v1
+      [591] ifnull +13 (target=604)
+      [594] aload_0 v0
+      [595] getfield #40
+        + Fieldref [com/bertron/hypnocat/a.a Landroid/view/SurfaceHolder;]
+      [598] aload_1 v1
+      [599] invokeinterface #89
+        + InterfaceMethodref [android/view/SurfaceHolder.unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+      [604] aload_0 v0
+      [605] getfield #41
+        + Fieldref [com/bertron/hypnocat/a.b Z]
+      [608] ifne -543 (target=65)
+      [611] return
+      Code attribute exceptions (count = 4):
+      - ExceptionInfo (3 -> 9: 12):
+      + Class [java/lang/InterruptedException]
+      - ExceptionInfo (44 -> 50: 53):
+      + Class [java/lang/InterruptedException]
+      - ExceptionInfo (109 -> 567: 570):
+      - ExceptionInfo (84 -> 573: 573):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 13):
+        - [3] Var: ..., Stack: (empty)
+        - [12] Var: ..., Stack: [a:java/lang/InterruptedException]
+        - [17] Var: ..., Stack: (empty)
+        - [34] Var: ..., Stack: (empty)
+        - [44] Var: ..., Stack: (empty)
+        - [53] Var: ..., Stack: [a:java/lang/InterruptedException]
+        - [58] Var: ..., Stack: (empty)
+        - [65] Var: ..., Stack: (empty)
+        - [570] Var: [a:com/bertron/hypnocat/a][a:android/graphics/Canvas][a:android/view/SurfaceHolder], Stack: [a:java/lang/Throwable]
+        - [573] Var: [a:com/bertron/hypnocat/a][a:android/graphics/Canvas], Stack: [a:java/lang/Throwable]
+        - [588] Var: [a:com/bertron/hypnocat/a][a:android/graphics/Canvas][T][a:java/lang/Throwable], Stack: 
+        - [590] Var: [a:com/bertron/hypnocat/a][a:android/graphics/Canvas], Stack: 
+        - [604] Var: -1, Stack: (empty)
+  + Method:       a(II)Z
+    Access flags: 0x11
+      = public final boolean a(int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 89, locals = 5, stack = 6):
+      [0] aload_0 v0
+      [1] getfield #43
+        + Fieldref [com/bertron/hypnocat/a.d Ljava/util/Vector;]
+      [4] invokevirtual #86
+        + Methodref [java/util/Vector.iterator ()Ljava/util/Iterator;]
+      [7] astore v4
+      [9] goto +68 (target=77)
+      [12] aload v4
+      [14] invokeinterface #91
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [19] checkcast #12
+        + Class [com/bertron/hypnocat/b]
+      [22] astore_3 v3
+      [23] iload_1 v1
+      [24] i2d
+      [25] aload_3 v3
+      [26] getfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [29] dcmpl
+      [30] ifle +47 (target=77)
+      [33] iload_2 v2
+      [34] i2d
+      [35] aload_3 v3
+      [36] getfield #54
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [39] dcmpl
+      [40] ifle +37 (target=77)
+      [43] iload_1 v1
+      [44] i2d
+      [45] aload_3 v3
+      [46] getfield #53
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [49] aload_3 v3
+      [50] getfield #56
+        + Fieldref [com/bertron/hypnocat/b.f I]
+      [53] i2d
+      [54] dadd
+      [55] dcmpg
+      [56] ifge +21 (target=77)
+      [59] iload_2 v2
+      [60] i2d
+      [61] aload_3 v3
+      [62] getfield #54
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [65] aload_3 v3
+      [66] getfield #55
+        + Fieldref [com/bertron/hypnocat/b.e I]
+      [69] i2d
+      [70] dadd
+      [71] dcmpg
+      [72] ifge +5 (target=77)
+      [75] iconst_1
+      [76] ireturn
+      [77] aload v4
+      [79] invokeinterface #90
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [84] ifne -72 (target=12)
+      [87] iconst_0
+      [88] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [12] Var: [a:com/bertron/hypnocat/a][i][i][T][a:java/util/Iterator], Stack: 
+        - [77] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/bertron/hypnocat/a;)Z
+    Access flags: 0x1008
+      = static synthetic boolean a(com.bertron.hypnocat.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #41
+        + Fieldref [com/bertron/hypnocat/a.b Z]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/b
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.bertron.hypnocat.b extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 201):
+  + Integer [2131034116]
+  + Integer [2131034117]
+  + Integer [2131034118]
+  + String []
+  + String [EULA]
+  + String [eula]
+  + String [eula.accepted]
+  + Class [android/app/Activity]
+  + Class [android/app/AlertDialog]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/content/SharedPreferences]
+  + Class [android/content/SharedPreferences$Editor]
+  + Class [android/content/res/AssetManager]
+  + Class [android/graphics/Bitmap]
+  + Class [com/bertron/hypnocat/b]
+  + Class [com/bertron/hypnocat/c]
+  + Class [com/bertron/hypnocat/d]
+  + Class [com/bertron/hypnocat/e]
+  + Class [java/io/BufferedReader]
+  + Class [java/io/Closeable]
+  + Class [java/io/IOException]
+  + Class [java/io/InputStreamReader]
+  + Class [java/lang/Object]
+  + Class [java/lang/StringBuilder]
+  + Class [java/lang/System]
+  + Long [100]
+  + Fieldref [com/bertron/hypnocat/b.a D]
+  + Fieldref [com/bertron/hypnocat/b.b D]
+  + Fieldref [com/bertron/hypnocat/b.c D]
+  + Fieldref [com/bertron/hypnocat/b.d D]
+  + Fieldref [com/bertron/hypnocat/b.e I]
+  + Fieldref [com/bertron/hypnocat/b.f I]
+  + Fieldref [com/bertron/hypnocat/b.g Landroid/graphics/Bitmap;]
+  + Fieldref [com/bertron/hypnocat/b.h I]
+  + Fieldref [com/bertron/hypnocat/b.i J]
+  + Fieldref [com/bertron/hypnocat/b.j J]
+  + Methodref [android/app/Activity.finish ()V]
+  + Methodref [android/app/Activity.getAssets ()Landroid/content/res/AssetManager;]
+  + Methodref [android/app/Activity.getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+  + Methodref [android/app/AlertDialog.show ()V]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+  + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/content/res/AssetManager.open (Ljava/lang/String;)Ljava/io/InputStream;]
+  + Methodref [android/graphics/Bitmap.getHeight ()I]
+  + Methodref [android/graphics/Bitmap.getWidth ()I]
+  + Methodref [com/bertron/hypnocat/b.a (Ljava/io/Closeable;)V]
+  + Methodref [com/bertron/hypnocat/b.c (Landroid/app/Activity;)Ljava/lang/CharSequence;]
+  + Methodref [com/bertron/hypnocat/c.<init> (Landroid/content/SharedPreferences;Landroid/app/Activity;)V]
+  + Methodref [com/bertron/hypnocat/d.<init> (Landroid/app/Activity;)V]
+  + Methodref [com/bertron/hypnocat/e.<init> (Landroid/app/Activity;)V]
+  + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
+  + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
+  + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/System.currentTimeMillis ()J]
+  + InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
+  + InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+  + InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
+  + InterfaceMethodref [android/content/SharedPreferences$Editor.putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+  + InterfaceMethodref [java/io/Closeable.close ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/app/Activity;)V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/content/SharedPreferences;Landroid/app/Activity;)V]
+  + NameAndType [<init> (Ljava/io/InputStream;)V]
+  + NameAndType [<init> (Ljava/io/Reader;)V]
+  + NameAndType [a (Ljava/io/Closeable;)V]
+  + NameAndType [a D]
+  + NameAndType [append (C)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b D]
+  + NameAndType [c (Landroid/app/Activity;)Ljava/lang/CharSequence;]
+  + NameAndType [c D]
+  + NameAndType [close ()V]
+  + NameAndType [commit ()Z]
+  + NameAndType [create ()Landroid/app/AlertDialog;]
+  + NameAndType [currentTimeMillis ()J]
+  + NameAndType [d D]
+  + NameAndType [e I]
+  + NameAndType [edit ()Landroid/content/SharedPreferences$Editor;]
+  + NameAndType [f I]
+  + NameAndType [finish ()V]
+  + NameAndType [g Landroid/graphics/Bitmap;]
+  + NameAndType [getAssets ()Landroid/content/res/AssetManager;]
+  + NameAndType [getBoolean (Ljava/lang/String;Z)Z]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [h I]
+  + NameAndType [i J]
+  + NameAndType [j J]
+  + NameAndType [open (Ljava/lang/String;)Ljava/io/InputStream;]
+  + NameAndType [putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+  + NameAndType [readLine ()Ljava/lang/String;]
+  + NameAndType [setCancelable (Z)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setTitle (I)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()V]
+  + Utf8 []
+  + Utf8 [()I]
+  + Utf8 [()J]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/content/SharedPreferences$Editor;]
+  + Utf8 [()Landroid/content/res/AssetManager;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(C)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/app/Activity;)Ljava/lang/CharSequence;]
+  + Utf8 [(Landroid/app/Activity;)V]
+  + Utf8 [(Landroid/app/Activity;)Z]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/content/SharedPreferences;)V]
+  + Utf8 [(Landroid/content/SharedPreferences;Landroid/app/Activity;)V]
+  + Utf8 [(Lcom/bertron/hypnocat/a;Landroid/graphics/Bitmap;IIDDI)V]
+  + Utf8 [(Ljava/io/Closeable;)V]
+  + Utf8 [(Ljava/io/InputStream;)V]
+  + Utf8 [(Ljava/io/Reader;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/String;)Ljava/io/InputStream;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+  + Utf8 [(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+  + Utf8 [(Ljava/lang/String;Z)Z]
+  + Utf8 [(Z)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [D]
+  + Utf8 [EULA]
+  + Utf8 [I]
+  + Utf8 [J]
+  + Utf8 [Landroid/graphics/Bitmap;]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/app/AlertDialog]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/content/SharedPreferences]
+  + Utf8 [android/content/SharedPreferences$Editor]
+  + Utf8 [android/content/res/AssetManager]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [close]
+  + Utf8 [com/bertron/hypnocat/b]
+  + Utf8 [com/bertron/hypnocat/c]
+  + Utf8 [com/bertron/hypnocat/d]
+  + Utf8 [com/bertron/hypnocat/e]
+  + Utf8 [commit]
+  + Utf8 [create]
+  + Utf8 [currentTimeMillis]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [edit]
+  + Utf8 [eula]
+  + Utf8 [eula.accepted]
+  + Utf8 [f]
+  + Utf8 [finish]
+  + Utf8 [g]
+  + Utf8 [getAssets]
+  + Utf8 [getBoolean]
+  + Utf8 [getHeight]
+  + Utf8 [getSharedPreferences]
+  + Utf8 [getWidth]
+  + Utf8 [h]
+  + Utf8 [i]
+  + Utf8 [j]
+  + Utf8 [java/io/BufferedReader]
+  + Utf8 [java/io/Closeable]
+  + Utf8 [java/io/IOException]
+  + Utf8 [java/io/InputStreamReader]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/lang/System]
+  + Utf8 [open]
+  + Utf8 [putBoolean]
+  + Utf8 [readLine]
+  + Utf8 [setCancelable]
+  + Utf8 [setMessage]
+  + Utf8 [setNegativeButton]
+  + Utf8 [setOnCancelListener]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+
+Fields (count = 10):
+  + Field:        a D
+    Access flags: 0x0
+      = double a
+  + Field:        b D
+    Access flags: 0x0
+      = double b
+  + Field:        c D
+    Access flags: 0x0
+      = double c
+  + Field:        d D
+    Access flags: 0x0
+      = double d
+  + Field:        e I
+    Access flags: 0x0
+      = int e
+  + Field:        f I
+    Access flags: 0x0
+      = int f
+  + Field:        g Landroid/graphics/Bitmap;
+    Access flags: 0x0
+      = android.graphics.Bitmap g
+  + Field:        h I
+    Access flags: 0x0
+      = int h
+  + Field:        i J
+    Access flags: 0x0
+      = long i
+  + Field:        j J
+    Access flags: 0x0
+      = long j
+
+Methods (count = 6):
+  - Method:       <init>(Lcom/bertron/hypnocat/a;Landroid/graphics/Bitmap;IIDDI)V
+    Access flags: 0x1
+      = public b(com.bertron.hypnocat.a,android.graphics.Bitmap,int,int,double,double,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 98, locals = 10, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #61
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #35
+        + Fieldref [com/bertron/hypnocat/b.h I]
+      [9] aload_0 v0
+      [10] ldc2_w #26
+        + Long [100]
+      [13] putfield #36
+        + Fieldref [com/bertron/hypnocat/b.i J]
+      [16] aload_0 v0
+      [17] invokestatic #65
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [20] putfield #37
+        + Fieldref [com/bertron/hypnocat/b.j J]
+      [23] aload_0 v0
+      [24] aload_2 v2
+      [25] putfield #34
+        + Fieldref [com/bertron/hypnocat/b.g Landroid/graphics/Bitmap;]
+      [28] aload_0 v0
+      [29] aload_0 v0
+      [30] getfield #34
+        + Fieldref [com/bertron/hypnocat/b.g Landroid/graphics/Bitmap;]
+      [33] invokevirtual #51
+        + Methodref [android/graphics/Bitmap.getHeight ()I]
+      [36] putfield #32
+        + Fieldref [com/bertron/hypnocat/b.e I]
+      [39] aload_0 v0
+      [40] aload_0 v0
+      [41] getfield #34
+        + Fieldref [com/bertron/hypnocat/b.g Landroid/graphics/Bitmap;]
+      [44] invokevirtual #52
+        + Methodref [android/graphics/Bitmap.getWidth ()I]
+      [47] bipush 16
+      [49] idiv
+      [50] putfield #33
+        + Fieldref [com/bertron/hypnocat/b.f I]
+      [53] aload_0 v0
+      [54] dload v5
+      [56] putfield #28
+        + Fieldref [com/bertron/hypnocat/b.a D]
+      [59] aload_0 v0
+      [60] dload v7
+      [62] putfield #29
+        + Fieldref [com/bertron/hypnocat/b.b D]
+      [65] aload_0 v0
+      [66] iload_3 v3
+      [67] i2d
+      [68] putfield #30
+        + Fieldref [com/bertron/hypnocat/b.c D]
+      [71] aload_0 v0
+      [72] iload v4
+      [74] i2d
+      [75] putfield #31
+        + Fieldref [com/bertron/hypnocat/b.d D]
+      [78] aload_0 v0
+      [79] iload_3 v3
+      [80] dload v5
+      [82] d2i
+      [83] imul
+      [84] bipush 16
+      [86] irem
+      [87] putfield #35
+        + Fieldref [com/bertron/hypnocat/b.h I]
+      [90] aload_0 v0
+      [91] iload v9
+      [93] i2l
+      [94] putfield #36
+        + Fieldref [com/bertron/hypnocat/b.i J]
+      [97] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/app/Activity;)Z
+    Access flags: 0x8
+      = static boolean a(android.app.Activity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 106, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] ldc #6
+        + String [eula]
+      [3] iconst_0
+      [4] invokevirtual #40
+        + Methodref [android/app/Activity.getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+      [7] dup
+      [8] astore_1 v1
+      [9] ldc #7
+        + String [eula.accepted]
+      [11] iconst_0
+      [12] invokeinterface #67
+        + InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+      [17] ifne +87 (target=104)
+      [20] new #10
+        + Class [android/app/AlertDialog$Builder]
+      [23] dup
+      [24] aload_0 v0
+      [25] invokespecial #42
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [28] dup
+      [29] astore_2 v2
+      [30] ldc #1
+        + Integer [2131034116]
+      [32] invokevirtual #49
+        + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
+      [35] pop
+      [36] aload_2 v2
+      [37] iconst_1
+      [38] invokevirtual #44
+        + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
+      [41] pop
+      [42] aload_2 v2
+      [43] ldc #2
+        + Integer [2131034117]
+      [45] new #16
+        + Class [com/bertron/hypnocat/c]
+      [48] dup
+      [49] aload_1 v1
+      [50] aload_0 v0
+      [51] invokespecial #55
+        + Methodref [com/bertron/hypnocat/c.<init> (Landroid/content/SharedPreferences;Landroid/app/Activity;)V]
+      [54] invokevirtual #48
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [57] pop
+      [58] aload_2 v2
+      [59] ldc #3
+        + Integer [2131034118]
+      [61] new #17
+        + Class [com/bertron/hypnocat/d]
+      [64] dup
+      [65] aload_0 v0
+      [66] invokespecial #56
+        + Methodref [com/bertron/hypnocat/d.<init> (Landroid/app/Activity;)V]
+      [69] invokevirtual #46
+        + Methodref [android/app/AlertDialog$Builder.setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [72] pop
+      [73] aload_2 v2
+      [74] new #18
+        + Class [com/bertron/hypnocat/e]
+      [77] dup
+      [78] aload_0 v0
+      [79] invokespecial #57
+        + Methodref [com/bertron/hypnocat/e.<init> (Landroid/app/Activity;)V]
+      [82] invokevirtual #47
+        + Methodref [android/app/AlertDialog$Builder.setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+      [85] pop
+      [86] aload_2 v2
+      [87] aload_0 v0
+      [88] invokestatic #54
+        + Methodref [com/bertron/hypnocat/b.c (Landroid/app/Activity;)Ljava/lang/CharSequence;]
+      [91] invokevirtual #45
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [94] pop
+      [95] aload_2 v2
+      [96] invokevirtual #43
+        + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [99] invokevirtual #41
+        + Methodref [android/app/AlertDialog.show ()V]
+      [102] iconst_0
+      [103] ireturn
+      [104] iconst_1
+      [105] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Landroid/app/Activity;)Ljava/lang/CharSequence;
+    Access flags: 0xa
+      = private static java.lang.CharSequence c(android.app.Activity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 80, locals = 3, stack = 6):
+      [0] aconst_null
+      [1] astore_1 v1
+      [2] new #19
+        + Class [java/io/BufferedReader]
+      [5] dup
+      [6] new #22
+        + Class [java/io/InputStreamReader]
+      [9] dup
+      [10] aload_0 v0
+      [11] invokevirtual #39
+        + Methodref [android/app/Activity.getAssets ()Landroid/content/res/AssetManager;]
+      [14] ldc #5
+        + String [EULA]
+      [16] invokevirtual #50
+        + Methodref [android/content/res/AssetManager.open (Ljava/lang/String;)Ljava/io/InputStream;]
+      [19] invokespecial #60
+        + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
+      [22] invokespecial #58
+        + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
+      [25] astore_1 v1
+      [26] new #24
+        + Class [java/lang/StringBuilder]
+      [29] dup
+      [30] invokespecial #62
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [33] astore_2 v2
+      [34] goto +14 (target=48)
+      [37] aload_2 v2
+      [38] aload_0 v0
+      [39] invokevirtual #64
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [42] bipush 10
+      [44] invokevirtual #63
+        + Methodref [java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;]
+      [47] pop
+      [48] aload_1 v1
+      [49] invokevirtual #59
+        + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
+      [52] dup
+      [53] astore_0 v0
+      [54] ifnonnull -17 (target=37)
+      [57] aload_2 v2
+      [58] astore_0 v0
+      [59] aload_1 v1
+      [60] invokestatic #53
+        + Methodref [com/bertron/hypnocat/b.a (Ljava/io/Closeable;)V]
+      [63] aload_0 v0
+      [64] areturn
+      [65] pop
+      [66] aload_1 v1
+      [67] invokestatic #53
+        + Methodref [com/bertron/hypnocat/b.a (Ljava/io/Closeable;)V]
+      [70] ldc #4
+        + String []
+      [72] areturn
+      [73] astore_0 v0
+      [74] aload_1 v1
+      [75] invokestatic #53
+        + Methodref [com/bertron/hypnocat/b.a (Ljava/io/Closeable;)V]
+      [78] aload_0 v0
+      [79] athrow
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (2 -> 59: 65):
+      + Class [java/io/IOException]
+      - ExceptionInfo (2 -> 59: 73):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/io/Closeable;)V
+    Access flags: 0xa
+      = private static void a(java.io.Closeable)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] ifnull +11 (target=12)
+      [4] aload_0 v0
+      [5] invokeinterface #70
+        + InterfaceMethodref [java/io/Closeable.close ()V]
+      [10] return
+      [11] pop
+      [12] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (4 -> 10: 11):
+      + Class [java/io/IOException]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/content/SharedPreferences;)V
+    Access flags: 0x1008
+      = static synthetic void a(android.content.SharedPreferences)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 23, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_0 v0
+      [3] invokeinterface #66
+        + InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
+      [8] ldc #7
+        + String [eula.accepted]
+      [10] iconst_1
+      [11] invokeinterface #69
+        + InterfaceMethodref [android/content/SharedPreferences$Editor.putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+      [16] invokeinterface #68
+        + InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
+      [21] pop
+      [22] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Landroid/app/Activity;)V
+    Access flags: 0x1008
+      = static synthetic void b(android.app.Activity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_0 v0
+      [3] invokevirtual #38
+        + Methodref [android/app/Activity.finish ()V]
+      [6] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.bertron.hypnocat.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 31):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/bertron/hypnocat/b]
+  + Class [com/bertron/hypnocat/c]
+  + Class [com/bertron/hypnocat/f]
+  + Class [java/lang/Object]
+  + Fieldref [com/bertron/hypnocat/c.a Landroid/content/SharedPreferences;]
+  + Fieldref [com/bertron/hypnocat/c.b Landroid/app/Activity;]
+  + Methodref [com/bertron/hypnocat/b.a (Landroid/content/SharedPreferences;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/content/SharedPreferences;)V]
+  + NameAndType [a Landroid/content/SharedPreferences;]
+  + NameAndType [b Landroid/app/Activity;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Landroid/content/SharedPreferences;)V]
+  + Utf8 [(Landroid/content/SharedPreferences;Landroid/app/Activity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/app/Activity;]
+  + Utf8 [Landroid/content/SharedPreferences;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [b]
+  + Utf8 [com/bertron/hypnocat/b]
+  + Utf8 [com/bertron/hypnocat/c]
+  + Utf8 [com/bertron/hypnocat/f]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 2):
+  + Field:        a Landroid/content/SharedPreferences;
+    Access flags: 0x1012
+      = private final synthetic android.content.SharedPreferences a
+  + Field:        b Landroid/app/Activity;
+    Access flags: 0x1012
+      = private final synthetic android.app.Activity b
+
+Methods (count = 2):
+  - Method:       <init>(Landroid/content/SharedPreferences;Landroid/app/Activity;)V
+    Access flags: 0x0
+      = c(android.content.SharedPreferences,android.app.Activity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        + Fieldref [com/bertron/hypnocat/c.a Landroid/content/SharedPreferences;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #7
+        + Fieldref [com/bertron/hypnocat/c.b Landroid/app/Activity;]
+      [10] aload_0 v0
+      [11] invokespecial #9
+        + Methodref [java/lang/Object.<init> ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 23, locals = 3, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/bertron/hypnocat/c.a Landroid/content/SharedPreferences;]
+      [4] invokestatic #8
+        + Methodref [com/bertron/hypnocat/b.a (Landroid/content/SharedPreferences;)V]
+      [7] aload_0 v0
+      [8] getfield #7
+        + Fieldref [com/bertron/hypnocat/c.b Landroid/app/Activity;]
+      [11] instanceof #4
+        + Class [com/bertron/hypnocat/f]
+      [14] ifeq +8 (target=22)
+      [17] aload_0 v0
+      [18] getfield #7
+        + Fieldref [com/bertron/hypnocat/c.b Landroid/app/Activity;]
+      [21] pop
+      [22] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [22] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.bertron.hypnocat.d extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 24):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/bertron/hypnocat/b]
+  + Class [com/bertron/hypnocat/d]
+  + Class [java/lang/Object]
+  + Fieldref [com/bertron/hypnocat/d.a Landroid/app/Activity;]
+  + Methodref [com/bertron/hypnocat/b.b (Landroid/app/Activity;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Landroid/app/Activity;]
+  + NameAndType [b (Landroid/app/Activity;)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/app/Activity;)V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/app/Activity;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [b]
+  + Utf8 [com/bertron/hypnocat/b]
+  + Utf8 [com/bertron/hypnocat/d]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Landroid/app/Activity;
+    Access flags: 0x1012
+      = private final synthetic android.app.Activity a
+
+Methods (count = 2):
+  - Method:       <init>(Landroid/app/Activity;)V
+    Access flags: 0x0
+      = d(android.app.Activity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/bertron/hypnocat/d.a Landroid/app/Activity;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 8, locals = 3, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [com/bertron/hypnocat/d.a Landroid/app/Activity;]
+      [4] invokestatic #6
+        + Methodref [com/bertron/hypnocat/b.b (Landroid/app/Activity;)V]
+      [7] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/e
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.bertron.hypnocat.e extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnCancelListener]
+
+Constant Pool (count = 24):
+  + Class [android/content/DialogInterface$OnCancelListener]
+  + Class [com/bertron/hypnocat/b]
+  + Class [com/bertron/hypnocat/e]
+  + Class [java/lang/Object]
+  + Fieldref [com/bertron/hypnocat/e.a Landroid/app/Activity;]
+  + Methodref [com/bertron/hypnocat/b.b (Landroid/app/Activity;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Landroid/app/Activity;]
+  + NameAndType [b (Landroid/app/Activity;)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/app/Activity;)V]
+  + Utf8 [(Landroid/content/DialogInterface;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/app/Activity;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnCancelListener]
+  + Utf8 [b]
+  + Utf8 [com/bertron/hypnocat/b]
+  + Utf8 [com/bertron/hypnocat/e]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onCancel]
+
+Fields (count = 1):
+  + Field:        a Landroid/app/Activity;
+    Access flags: 0x1012
+      = private final synthetic android.app.Activity a
+
+Methods (count = 2):
+  - Method:       <init>(Landroid/app/Activity;)V
+    Access flags: 0x0
+      = e(android.app.Activity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/bertron/hypnocat/e.a Landroid/app/Activity;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCancel(Landroid/content/DialogInterface;)V
+    Access flags: 0x11
+      = public final void onCancel(android.content.DialogInterface)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 8, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [com/bertron/hypnocat/e.a Landroid/app/Activity;]
+      [4] invokestatic #6
+        + Methodref [com/bertron/hypnocat/b.b (Landroid/app/Activity;)V]
+      [7] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/f
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x600
+    = interface com.bertron.hypnocat.f extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 5):
+  + Class [com/bertron/hypnocat/f]
+  + Class [java/lang/Object]
+  + Utf8 [com/bertron/hypnocat/f]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/HypnoCat
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.bertron.hypnocat.HypnoCat extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 140):
+  + Integer [2130903040]
+  + Integer [2131165184]
+  + Integer [2131230720]
+  + String [onCreate()]
+  + String [onDestroy()]
+  + String [onPause()]
+  + String [onResume()]
+  + String [onStart()]
+  + String [onStop()]
+  + Class [android/app/Activity]
+  + Class [android/util/Log]
+  + Class [android/view/GestureDetector]
+  + Class [android/view/MenuInflater]
+  + Class [android/view/MotionEvent]
+  + Class [com/bertron/hypnocat/BirdFlightView]
+  + Class [com/bertron/hypnocat/HypnoCat]
+  + Class [com/bertron/hypnocat/b]
+  + Class [com/bertron/hypnocat/g]
+  + Class [java/lang/Class]
+  + Class [java/lang/Object]
+  + Fieldref [com/bertron/hypnocat/HypnoCat.a Landroid/view/GestureDetector;]
+  + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+  + Fieldref [com/bertron/hypnocat/HypnoCat.c Landroid/view/GestureDetector$SimpleOnGestureListener;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onDestroy ()V]
+  + Methodref [android/app/Activity.onPause ()V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/app/Activity.onStart ()V]
+  + Methodref [android/app/Activity.onStop ()V]
+  + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/view/GestureDetector.<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  + Methodref [android/view/GestureDetector.onTouchEvent (Landroid/view/MotionEvent;)Z]
+  + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
+  + Methodref [android/view/MotionEvent.getAction ()I]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.a (Landroid/view/MotionEvent;)V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.a (Z)V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.b ()Lcom/bertron/hypnocat/a;]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.c ()V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.d ()V]
+  + Methodref [com/bertron/hypnocat/HypnoCat.findViewById (I)Landroid/view/View;]
+  + Methodref [com/bertron/hypnocat/HypnoCat.getMenuInflater ()Landroid/view/MenuInflater;]
+  + Methodref [com/bertron/hypnocat/HypnoCat.setContentView (I)V]
+  + Methodref [com/bertron/hypnocat/HypnoCat.setVolumeControlStream (I)V]
+  + Methodref [com/bertron/hypnocat/b.a (Landroid/app/Activity;)Z]
+  + Methodref [com/bertron/hypnocat/g.<init> (Lcom/bertron/hypnocat/HypnoCat;)V]
+  + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+  + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  + NameAndType [<init> (Lcom/bertron/hypnocat/HypnoCat;)V]
+  + NameAndType [a (Landroid/app/Activity;)Z]
+  + NameAndType [a (Landroid/view/MotionEvent;)V]
+  + NameAndType [a (Z)V]
+  + NameAndType [a Landroid/view/GestureDetector;]
+  + NameAndType [b ()Lcom/bertron/hypnocat/a;]
+  + NameAndType [b Lcom/bertron/hypnocat/BirdFlightView;]
+  + NameAndType [c ()V]
+  + NameAndType [c Landroid/view/GestureDetector$SimpleOnGestureListener;]
+  + NameAndType [d ()V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [getAction ()I]
+  + NameAndType [getClass ()Ljava/lang/Class;]
+  + NameAndType [getMenuInflater ()Landroid/view/MenuInflater;]
+  + NameAndType [getName ()Ljava/lang/String;]
+  + NameAndType [inflate (ILandroid/view/Menu;)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onDestroy ()V]
+  + NameAndType [onPause ()V]
+  + NameAndType [onResume ()V]
+  + NameAndType [onStart ()V]
+  + NameAndType [onStop ()V]
+  + NameAndType [onTouchEvent (Landroid/view/MotionEvent;)Z]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setVolumeControlStream (I)V]
+  + NameAndType [w (Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/view/MenuInflater;]
+  + Utf8 [()Lcom/bertron/hypnocat/a;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(ILandroid/view/Menu;)V]
+  + Utf8 [(Landroid/app/Activity;)Z]
+  + Utf8 [(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/Menu;)Z]
+  + Utf8 [(Landroid/view/MotionEvent;)V]
+  + Utf8 [(Landroid/view/MotionEvent;)Z]
+  + Utf8 [(Lcom/bertron/hypnocat/HypnoCat;)Lcom/bertron/hypnocat/BirdFlightView;]
+  + Utf8 [(Lcom/bertron/hypnocat/HypnoCat;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/view/GestureDetector$SimpleOnGestureListener;]
+  + Utf8 [Landroid/view/GestureDetector;]
+  + Utf8 [Lcom/bertron/hypnocat/BirdFlightView;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/view/GestureDetector]
+  + Utf8 [android/view/MenuInflater]
+  + Utf8 [android/view/MotionEvent]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/bertron/hypnocat/BirdFlightView]
+  + Utf8 [com/bertron/hypnocat/HypnoCat]
+  + Utf8 [com/bertron/hypnocat/b]
+  + Utf8 [com/bertron/hypnocat/g]
+  + Utf8 [d]
+  + Utf8 [findViewById]
+  + Utf8 [getAction]
+  + Utf8 [getClass]
+  + Utf8 [getMenuInflater]
+  + Utf8 [getName]
+  + Utf8 [inflate]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onCreate]
+  + Utf8 [onCreate()]
+  + Utf8 [onCreateOptionsMenu]
+  + Utf8 [onDestroy]
+  + Utf8 [onDestroy()]
+  + Utf8 [onPause]
+  + Utf8 [onPause()]
+  + Utf8 [onResume]
+  + Utf8 [onResume()]
+  + Utf8 [onStart]
+  + Utf8 [onStart()]
+  + Utf8 [onStop]
+  + Utf8 [onStop()]
+  + Utf8 [onTouchEvent]
+  + Utf8 [setContentView]
+  + Utf8 [setVolumeControlStream]
+  + Utf8 [w]
+
+Fields (count = 3):
+  + Field:        a Landroid/view/GestureDetector;
+    Access flags: 0x2
+      = private android.view.GestureDetector a
+  + Field:        b Lcom/bertron/hypnocat/BirdFlightView;
+    Access flags: 0x2
+      = private com.bertron.hypnocat.BirdFlightView b
+  + Field:        c Landroid/view/GestureDetector$SimpleOnGestureListener;
+    Access flags: 0x2
+      = private android.view.GestureDetector$SimpleOnGestureListener c
+
+Methods (count = 10):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public HypnoCat()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #24
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] new #18
+        + Class [com/bertron/hypnocat/g]
+      [8] dup
+      [9] aload_0 v0
+      [10] invokespecial #46
+        + Methodref [com/bertron/hypnocat/g.<init> (Lcom/bertron/hypnocat/HypnoCat;)V]
+      [13] putfield #23
+        + Fieldref [com/bertron/hypnocat/HypnoCat.c Landroid/view/GestureDetector$SimpleOnGestureListener;]
+      [16] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 72, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #25
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] invokestatic #45
+        + Methodref [com/bertron/hypnocat/b.a (Landroid/app/Activity;)Z]
+      [9] pop
+      [10] aload_0 v0
+      [11] ldc #1
+        + Integer [2130903040]
+      [13] invokevirtual #43
+        + Methodref [com/bertron/hypnocat/HypnoCat.setContentView (I)V]
+      [16] aload_0 v0
+      [17] aload_0 v0
+      [18] ldc #3
+        + Integer [2131230720]
+      [20] invokevirtual #41
+        + Methodref [com/bertron/hypnocat/HypnoCat.findViewById (I)Landroid/view/View;]
+      [23] checkcast #15
+        + Class [com/bertron/hypnocat/BirdFlightView]
+      [26] putfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [29] aload_0 v0
+      [30] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [33] invokevirtual #38
+        + Methodref [com/bertron/hypnocat/BirdFlightView.b ()Lcom/bertron/hypnocat/a;]
+      [36] pop
+      [37] aload_0 v0
+      [38] new #12
+        + Class [android/view/GestureDetector]
+      [41] dup
+      [42] aload_0 v0
+      [43] aload_0 v0
+      [44] getfield #23
+        + Fieldref [com/bertron/hypnocat/HypnoCat.c Landroid/view/GestureDetector$SimpleOnGestureListener;]
+      [47] invokespecial #32
+        + Methodref [android/view/GestureDetector.<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+      [50] putfield #21
+        + Fieldref [com/bertron/hypnocat/HypnoCat.a Landroid/view/GestureDetector;]
+      [53] aload_0 v0
+      [54] invokevirtual #48
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [57] invokevirtual #47
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [60] ldc #4
+        + String [onCreate()]
+      [62] invokestatic #31
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [65] pop
+      [66] aload_0 v0
+      [67] iconst_3
+      [68] invokevirtual #44
+        + Methodref [com/bertron/hypnocat/HypnoCat.setVolumeControlStream (I)V]
+      [71] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStart()V
+    Access flags: 0x4
+      = protected void onStart()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #29
+        + Methodref [android/app/Activity.onStart ()V]
+      [4] aload_0 v0
+      [5] invokevirtual #48
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [8] invokevirtual #47
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [11] ldc #8
+        + String [onStart()]
+      [13] invokestatic #31
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [16] pop
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPause()V
+    Access flags: 0x1
+      = public void onPause()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #27
+        + Methodref [android/app/Activity.onPause ()V]
+      [4] aload_0 v0
+      [5] invokevirtual #48
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [8] invokevirtual #47
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [11] ldc #6
+        + String [onPause()]
+      [13] invokestatic #31
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [16] pop
+      [17] aload_0 v0
+      [18] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [21] iconst_1
+      [22] invokevirtual #37
+        + Methodref [com/bertron/hypnocat/BirdFlightView.a (Z)V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onResume()V
+    Access flags: 0x4
+      = protected void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #28
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] invokevirtual #48
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [8] invokevirtual #47
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [11] ldc #7
+        + String [onResume()]
+      [13] invokestatic #31
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [16] pop
+      [17] aload_0 v0
+      [18] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [21] iconst_0
+      [22] invokevirtual #37
+        + Methodref [com/bertron/hypnocat/BirdFlightView.a (Z)V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStop()V
+    Access flags: 0x4
+      = protected void onStop()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #30
+        + Methodref [android/app/Activity.onStop ()V]
+      [4] aload_0 v0
+      [5] invokevirtual #48
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [8] invokevirtual #47
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [11] ldc #9
+        + String [onStop()]
+      [13] invokestatic #31
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [16] pop
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDestroy()V
+    Access flags: 0x4
+      = protected void onDestroy()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 32, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #26
+        + Methodref [android/app/Activity.onDestroy ()V]
+      [4] aload_0 v0
+      [5] invokevirtual #48
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [8] invokevirtual #47
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [11] ldc #5
+        + String [onDestroy()]
+      [13] invokestatic #31
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [16] pop
+      [17] aload_0 v0
+      [18] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [21] invokevirtual #39
+        + Methodref [com/bertron/hypnocat/BirdFlightView.c ()V]
+      [24] aload_0 v0
+      [25] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [28] invokevirtual #40
+        + Methodref [com/bertron/hypnocat/BirdFlightView.d ()V]
+      [31] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreateOptionsMenu(Landroid/view/Menu;)Z
+    Access flags: 0x1
+      = public boolean onCreateOptionsMenu(android.view.Menu)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #42
+        + Methodref [com/bertron/hypnocat/HypnoCat.getMenuInflater ()Landroid/view/MenuInflater;]
+      [4] ldc #2
+        + Integer [2131165184]
+      [6] aload_1 v1
+      [7] invokevirtual #34
+        + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
+      [10] iconst_1
+      [11] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onTouchEvent(Landroid/view/MotionEvent;)Z
+    Access flags: 0x1
+      = public boolean onTouchEvent(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 3, stack = 2):
+      [0] aload_1 v1
+      [1] invokevirtual #35
+        + Methodref [android/view/MotionEvent.getAction ()I]
+      [4] dup
+      [5] istore_2 v2
+      [6] ifne +11 (target=17)
+      [9] aload_0 v0
+      [10] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [13] aload_1 v1
+      [14] invokevirtual #36
+        + Methodref [com/bertron/hypnocat/BirdFlightView.a (Landroid/view/MotionEvent;)V]
+      [17] aload_0 v0
+      [18] getfield #21
+        + Fieldref [com/bertron/hypnocat/HypnoCat.a Landroid/view/GestureDetector;]
+      [21] aload_1 v1
+      [22] invokevirtual #33
+        + Methodref [android/view/GestureDetector.onTouchEvent (Landroid/view/MotionEvent;)Z]
+      [25] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [17] Var: ...[i], Stack: (empty)
+  + Method:       a(Lcom/bertron/hypnocat/HypnoCat;)Lcom/bertron/hypnocat/BirdFlightView;
+    Access flags: 0x1008
+      = static synthetic com.bertron.hypnocat.BirdFlightView a(com.bertron.hypnocat.HypnoCat)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #22
+        + Fieldref [com/bertron/hypnocat/HypnoCat.b Lcom/bertron/hypnocat/BirdFlightView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/bertron/hypnocat/g
+  Superclass:    android/view/GestureDetector$SimpleOnGestureListener
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.bertron.hypnocat.g extends android.view.GestureDetector$SimpleOnGestureListener
+
+Interfaces (count = 0):
+
+Constant Pool (count = 27):
+  + Class [android/view/GestureDetector$SimpleOnGestureListener]
+  + Class [com/bertron/hypnocat/BirdFlightView]
+  + Class [com/bertron/hypnocat/HypnoCat]
+  + Class [com/bertron/hypnocat/g]
+  + Fieldref [com/bertron/hypnocat/g.a Lcom/bertron/hypnocat/HypnoCat;]
+  + Methodref [android/view/GestureDetector$SimpleOnGestureListener.<init> ()V]
+  + Methodref [com/bertron/hypnocat/BirdFlightView.e ()V]
+  + Methodref [com/bertron/hypnocat/HypnoCat.a (Lcom/bertron/hypnocat/HypnoCat;)Lcom/bertron/hypnocat/BirdFlightView;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/bertron/hypnocat/HypnoCat;)Lcom/bertron/hypnocat/BirdFlightView;]
+  + NameAndType [a Lcom/bertron/hypnocat/HypnoCat;]
+  + NameAndType [e ()V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/view/MotionEvent;)Z]
+  + Utf8 [(Lcom/bertron/hypnocat/HypnoCat;)Lcom/bertron/hypnocat/BirdFlightView;]
+  + Utf8 [(Lcom/bertron/hypnocat/HypnoCat;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/bertron/hypnocat/HypnoCat;]
+  + Utf8 [a]
+  + Utf8 [android/view/GestureDetector$SimpleOnGestureListener]
+  + Utf8 [com/bertron/hypnocat/BirdFlightView]
+  + Utf8 [com/bertron/hypnocat/HypnoCat]
+  + Utf8 [com/bertron/hypnocat/g]
+  + Utf8 [e]
+  + Utf8 [onDoubleTap]
+
+Fields (count = 1):
+  + Field:        a Lcom/bertron/hypnocat/HypnoCat;
+    Access flags: 0x1002
+      = private synthetic com.bertron.hypnocat.HypnoCat a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/bertron/hypnocat/HypnoCat;)V
+    Access flags: 0x0
+      = g(com.bertron.hypnocat.HypnoCat)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/bertron/hypnocat/g.a Lcom/bertron/hypnocat/HypnoCat;]
+      [5] aload_0 v0
+      [6] invokespecial #6
+        + Methodref [android/view/GestureDetector$SimpleOnGestureListener.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDoubleTap(Landroid/view/MotionEvent;)Z
+    Access flags: 0x11
+      = public final boolean onDoubleTap(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [com/bertron/hypnocat/g.a Lcom/bertron/hypnocat/HypnoCat;]
+      [4] invokestatic #8
+        + Methodref [com/bertron/hypnocat/HypnoCat.a (Lcom/bertron/hypnocat/HypnoCat;)Lcom/bertron/hypnocat/BirdFlightView;]
+      [7] invokevirtual #7
+        + Methodref [com/bertron/hypnocat/BirdFlightView.e ()V]
+      [10] iconst_1
+      [11] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

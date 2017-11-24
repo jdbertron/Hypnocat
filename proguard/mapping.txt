@@ -1,0 +1,86 @@
+com.bertron.hypnocat.BirdFlightView -> com.bertron.hypnocat.BirdFlightView:
+    com.bertron.hypnocat.BirdFlightView$AnimationThread mAnimationThread -> a
+    int screenWidth -> b
+    android.media.SoundPool mSoundPool -> c
+    android.util.SparseIntArray mSoundMap -> d
+    android.graphics.Paint birdPaint -> e
+    android.graphics.Paint bkgPaint -> f
+    float lineWidth -> g
+    java.util.Random rnd -> h
+    boolean surfaceCreated -> i
+    boolean isPaused -> j
+    void setPaused(boolean) -> a
+    boolean isSurfaceCreated() -> a
+    com.bertron.hypnocat.BirdFlightView$AnimationThread getThread() -> b
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void scareBird(android.view.MotionEvent) -> a
+    void endAnimation() -> c
+    void releaseResources() -> d
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void doubleTap$53fcfd4a() -> e
+    boolean access$0(com.bertron.hypnocat.BirdFlightView) -> a
+    android.graphics.Paint access$1(com.bertron.hypnocat.BirdFlightView) -> b
+    int access$2(com.bertron.hypnocat.BirdFlightView) -> c
+com.bertron.hypnocat.BirdFlightView$AnimationThread -> com.bertron.hypnocat.a:
+    android.view.SurfaceHolder mSurfaceHolder -> a
+    boolean isRunning -> b
+    long mLastTime -> c
+    java.util.Vector sprites -> d
+    android.graphics.Bitmap blob1 -> e
+    android.graphics.Bitmap blob2 -> f
+    long mNextTime -> g
+    java.util.Random r -> h
+    double rate -> i
+    long now -> j
+    com.bertron.hypnocat.BirdFlightView this$0 -> k
+    void setSurfaceSize$255f295() -> a
+    com.bertron.hypnocat.BirdSprite newBird(java.util.Random) -> a
+    void setRunning(boolean) -> a
+    void run() -> run
+    boolean isBird(int,int) -> a
+    boolean access$0(com.bertron.hypnocat.BirdFlightView$AnimationThread) -> a
+com.bertron.hypnocat.BirdSprite -> com.bertron.hypnocat.b:
+    double xSpeed -> a
+    double ySpeed -> b
+    double x -> c
+    double y -> d
+    int height -> e
+    int width -> f
+    android.graphics.Bitmap b -> g
+    int currentFrame -> h
+    long flightSpeed -> i
+    long created -> j
+    boolean show(android.app.Activity) -> a
+    java.lang.CharSequence readEula(android.app.Activity) -> c
+    void closeStream(java.io.Closeable) -> a
+    void access$0(android.content.SharedPreferences) -> a
+    void access$1(android.app.Activity) -> b
+com.bertron.hypnocat.Eula$1 -> com.bertron.hypnocat.c:
+    android.content.SharedPreferences val$preferences -> a
+    android.app.Activity val$activity -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bertron.hypnocat.Eula$2 -> com.bertron.hypnocat.d:
+    android.app.Activity val$activity -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bertron.hypnocat.Eula$3 -> com.bertron.hypnocat.e:
+    android.app.Activity val$activity -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.bertron.hypnocat.Eula$OnEulaAgreedTo -> com.bertron.hypnocat.f:
+com.bertron.hypnocat.HypnoCat -> com.bertron.hypnocat.HypnoCat:
+    android.view.GestureDetector gestureDetector -> a
+    com.bertron.hypnocat.BirdFlightView birdFlightView -> b
+    android.view.GestureDetector$SimpleOnGestureListener gestureListener -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    com.bertron.hypnocat.BirdFlightView access$0(com.bertron.hypnocat.HypnoCat) -> a
+com.bertron.hypnocat.HypnoCat$1 -> com.bertron.hypnocat.g:
+    com.bertron.hypnocat.HypnoCat this$0 -> a
+    boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
